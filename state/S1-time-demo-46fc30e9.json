@@ -1,0 +1,18 @@
+{
+  "run_id": "S1-time-demo-46fc30e9",
+  "scenario_id": "S1-time-demo",
+  "messages": [
+    {
+      "role": "system",
+      "content": "AGENT: use tools to verify orders, retrieve policy and follow refund rules."
+    },
+    {
+      "role": "user",
+      "content": "My order ORD-100048 reached me very late. I would like a refund."
+    }
+  ],
+  "tokens_used": 0,
+  "steps": [],
+  "tools_executed": [],
+  "llm_calls": 0
+}

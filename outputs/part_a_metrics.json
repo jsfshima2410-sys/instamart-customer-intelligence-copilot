@@ -1,0 +1,315 @@
+{
+  "audit": {
+    "customers": {
+      "shape": [
+        1200,
+        5
+      ],
+      "dtypes": {
+        "customer_id": "object",
+        "city": "object",
+        "signup_date": "object",
+        "age": "string",
+        "gender": "object"
+      },
+      "missing": {
+        "customer_id": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "city": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "signup_date": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "age": {
+          "count": 61,
+          "pct": 5.08
+        },
+        "gender": {
+          "count": 30,
+          "pct": 2.5
+        }
+      }
+    },
+    "products": {
+      "shape": [
+        40,
+        4
+      ],
+      "dtypes": {
+        "product_id": "object",
+        "product_name": "object",
+        "category": "object",
+        "price_inr": "int64"
+      },
+      "missing": {
+        "product_id": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "product_name": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "category": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "price_inr": {
+          "count": 0,
+          "pct": 0.0
+        }
+      }
+    },
+    "orders": {
+      "shape": [
+        13084,
+        9
+      ],
+      "dtypes": {
+        "order_id": "object",
+        "customer_id": "object",
+        "product_id": "object",
+        "quantity": "int64",
+        "order_ts": "object",
+        "status": "object",
+        "discount_pct": "int64",
+        "order_amount": "object",
+        "delivery_minutes": "float64"
+      },
+      "missing": {
+        "order_id": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "customer_id": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "product_id": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "quantity": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "order_ts": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "status": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "discount_pct": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "order_amount": {
+          "count": 53,
+          "pct": 0.41
+        },
+        "delivery_minutes": {
+          "count": 2541,
+          "pct": 19.42
+        }
+      }
+    },
+    "tickets": {
+      "shape": [
+        164,
+        5
+      ],
+      "dtypes": {
+        "ticket_id": "object",
+        "customer_id": "object",
+        "order_id": "object",
+        "text": "object",
+        "true_category": "object"
+      },
+      "missing": {
+        "ticket_id": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "customer_id": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "order_id": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "text": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "true_category": {
+          "count": 0,
+          "pct": 0.0
+        }
+      }
+    },
+    "orders_specific": {
+      "rows": 13084,
+      "exact_duplicates": 119,
+      "pending": 656,
+      "distinct_order_id": 12309,
+      "bad_amount": 120,
+      "negative_delivery": 106,
+      "blank_delivery": 2541
+    },
+    "customers_specific": {
+      "blank_age": 61,
+      "age_outside_10_100": 6,
+      "city_spellings": 24,
+      "gender_spellings_nonblank": 10,
+      "blank_gender": 30
+    }
+  },
+  "city_counts": {
+    "Pune": 227,
+    "Delhi": 210,
+    "Bengaluru": 197,
+    "Chennai": 191,
+    "Hyderabad": 191,
+    "Mumbai": 184
+  },
+  "gender_counts": {
+    "female": 610,
+    "male": 560,
+    "unknown": 30
+  },
+  "order_rows": 12309,
+  "status_counts": {
+    "completed": 11110,
+    "cancelled": 1199
+  },
+  "completed_sum": 2998668.8,
+  "q_counts": [
+    30,
+    30,
+    11,
+    25,
+    550,
+    1175,
+    183
+  ],
+  "q2_sum": 2998668.8,
+  "q2_largest": {
+    "city": "Bengaluru",
+    "category": "Electronics",
+    "revenue": 233909.45
+  },
+  "q5_mean": 2552.06,
+  "q6_rank_diff": 8,
+  "q7_days": 183,
+  "q7_last": 2998668.8,
+  "amount": {
+    "mean": 269.91,
+    "median": 135.0,
+    "skew": 4.61,
+    "q1": 64.8,
+    "q3": 297.0,
+    "lower_fence": -283.5,
+    "upper_fence": 645.3,
+    "below": 0,
+    "above": 897
+  },
+  "city_completed": {
+    "Bengaluru": {
+      "sum": 523643.4,
+      "mean": 276.47,
+      "count": 1894
+    },
+    "Chennai": {
+      "sum": 463629.15,
+      "mean": 272.72,
+      "count": 1700
+    },
+    "Delhi": {
+      "sum": 502829.8,
+      "mean": 243.62,
+      "count": 2064
+    },
+    "Hyderabad": {
+      "sum": 528589.9,
+      "mean": 284.95,
+      "count": 1855
+    },
+    "Mumbai": {
+      "sum": 479058.5,
+      "mean": 297.0,
+      "count": 1613
+    },
+    "Pune": {
+      "sum": 500918.05,
+      "mean": 252.48,
+      "count": 1984
+    }
+  },
+  "corr": {
+    "order_amount": {
+      "order_amount": 1.0,
+      "discount_pct": -0.095,
+      "quantity": 0.087,
+      "delivery_minutes": -0.003
+    },
+    "discount_pct": {
+      "order_amount": -0.095,
+      "discount_pct": 1.0,
+      "quantity": -0.0,
+      "delivery_minutes": -0.01
+    },
+    "quantity": {
+      "order_amount": 0.087,
+      "discount_pct": -0.0,
+      "quantity": 1.0,
+      "delivery_minutes": -0.013
+    },
+    "delivery_minutes": {
+      "order_amount": -0.003,
+      "discount_pct": -0.01,
+      "quantity": -0.013,
+      "delivery_minutes": 1.0
+    }
+  },
+  "pandas_pivot_total": 2998668.8,
+  "q6_city_leaders": [
+    {
+      "city": "Bengaluru",
+      "customer_id": "C0082",
+      "total": 12856.2
+    },
+    {
+      "city": "Chennai",
+      "customer_id": "C0930",
+      "total": 10151.4
+    },
+    {
+      "city": "Delhi",
+      "customer_id": "C0291",
+      "total": 13742.6
+    },
+    {
+      "city": "Hyderabad",
+      "customer_id": "C0743",
+      "total": 12730.050000000001
+    },
+    {
+      "city": "Mumbai",
+      "customer_id": "C0693",
+      "total": 14766.550000000001
+    },
+    {
+      "city": "Pune",
+      "customer_id": "C0426",
+      "total": 10377.1
+    }
+  ]
+}
